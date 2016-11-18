@@ -1,0 +1,12 @@
+body {
+    background-color: rgb(50, 50, 50);
+    color: rgb(255, 255, 255);
+    font-family: 'Source Sans Pro', sans-serif;
+    text-align: center;
+}
+
+#content {
+    display: block;
+    margin-left: auto;
+    margin-right: auto
+}
