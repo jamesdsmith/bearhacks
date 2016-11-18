@@ -1,0 +1,79 @@
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Bacteria Simulation</title>
+		<link rel="stylesheet" href="styles.css">
+		<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+		<script src="processing.js"></script>
+
+		<script type="text/processing" data-processing-target="mycanvas">
+			//JAVASCRIPT STARTS HERE
+
+      void setup() {
+      	size(1000, 800);
+      	background(255);
+      }
+
+      var numBacteria = 150;
+      var bacteriumX = [];
+      var bacteriumY = [];
+      var siz = [];
+      var green = [];
+
+      for (var i = 0; i < numBacteria; i++) {
+        green.push(random(0,255));
+        siz.push(random(0, 10));
+        bacteriumX.push(random(100,1000));
+        bacteriumY.push(random(100,700));
+      }
+
+      void draw() {
+				background(255);
+        drawBacteria();
+        moveBacteria();
+      }
+
+      function drawBacterium(i) {
+        noStroke();
+ 		    fill(0, green[i], 0);
+		    ellipse(bacteriumX[i], bacteriumY[i], siz[i], siz[i]);
+      }
+
+      function drawBacteria() {
+        for (var i = 0; i < numBacteria; i = i + 1) {
+          drawBacterium(i);
+        }
+      }
+
+			function moveBacterium(i) {
+				if (bacteriumX[i] < mouseX) {
+		 			bacteriumX[i] = bacteriumX[i] + random(-2, 3);
+		 		} else if(bacteriumX[i] > mouseX) {
+		 			bacteriumX[i] = bacteriumX[i] + random(-3, 2);
+		 		} else {
+		 			bacteriumX[i] = bacteriumX[i] + random(-3, 3);
+		 		}
+
+		 		if(bacteriumY[i] < mouseY) {
+		 			bacteriumY[i] = bacteriumY[i] + random(-2, 3);
+		 		} else if(bacteriumY[i] > mouseY) {
+		 			bacteriumY[i] = bacteriumY[i] + random(-3, 2);
+		 		} else {
+		 			bacteriumY[i] = bacteriumY[i] + random(-3, 3);
+		 		}
+			}
+
+      function moveBacteria() {
+        for(var i = 0; i < numBacteria; i = i + 1){
+          moveBacterium(i);
+        }
+      }
+
+			//JAVASCRIPT ENDS HERE
+		</script>
+	</head>
+	<body>
+		<h1> Bacteria Simulation </h1>
+		<canvas id="mycanvas"></canvas>
+	</body>
+</html>
