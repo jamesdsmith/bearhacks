@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" type="text/css" href="/app.css" />
+    <title>Naman Priyadarshi</title>
+  </head>
+  <body>
+    <h1>Name: Naman Priyadarshi</h1>
+    <img style="width:100px;" src="namanbear.jpg"></img><br>
+    <input id="clickMe" type="button" value="Like!" onclick="increment();" />
+    <input id="clickMe2" type="button" value="Change Color!" onclick="switchColor();" />
+    <p>Number of Clicks: </p><p id="demo">0</p>
+    <p id="test">I will change colors</p>
+    <h2>Student at UC Berkeley</h2>
+    <h2>Hobbies</h2>
+    <ul>
+        <li>Tennis</li>
+        <li>Programming</li>
+    </ul>
+    <script>
+        var i = 0;
+        function increment() {
+            i++;
+            document.getElementById("demo").innerHTML = i;
+        }
+        function switchColor() {
+            document.getElementById("test").style.color = "blue";
+        }
+    </script>
+  </body>
+</html>
