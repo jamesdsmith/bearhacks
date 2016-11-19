@@ -1,12 +1,8 @@
-FROM jamesdsmith/bearhacks
+FROM jupyter/notebook
 
-MAINTAINER James Smith <james.smith@berkeley.edu>
-
-USER root
-
-RUN apt-get update
-RUN apt-get install -y npm libzmq3-dev && apt-get clean
 RUN npm install -g ijavascript
 
-USER main
+CMD ijs --ip=* --debug
+
+EXPOSE 8888
 
