@@ -1,4 +1,4 @@
-FROM jupyter/notebook
+FROM andrewosh/binder-base
 
 USER root
 
