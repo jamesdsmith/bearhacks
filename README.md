@@ -10,6 +10,8 @@ There are some modules that dont use Jupyter Notebooks or are hosted in other re
 
 **Chrome Extensions**: https://github.com/kana-mycin/chrome-ext-module
 
+**Coding Challenges**: https://docs.google.com/document/u/1/d/1_waKzMrgjCPoS4imIrrEK7rWAl_rWj5ZG4Wp3EyFNOg/edit
+
 ### Authors
 
 Amanda Tomlinson, Annie Xie, Arjun Sridhar, Aviral Pandey, Brandon Huang, Brandon Lee, Brijen Thananjeyan, James Smith, Jane Liang, Janny Zhang, Jessie Yang, Maxwell Gerber, Naman Priyadarshi, Olivia Hsu, Rushil Goradia, Sean Lobo, Tyler Davis
