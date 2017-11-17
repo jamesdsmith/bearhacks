@@ -1,6 +1,2 @@
 praw
 numpy
-scipy
-skimage
-matplotlib
-drawing
