@@ -1,5 +1,5 @@
 praw
 numpy
 scipy
-matplotlip
+matplotlib
 skimage
